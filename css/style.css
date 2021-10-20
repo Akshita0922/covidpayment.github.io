@@ -67,6 +67,7 @@ header{
     top: 50%;
     left: 50%;
     text-align: left;
+    font-weight: bold;
     transform: translate(-50%,-50%);
 }
 h1{
@@ -148,7 +149,7 @@ h1{
     }
     .nav-bar li{
         padding:5px 10px;
-        align-items: center;
+        align-items:center;
         display: block;     
     }
 }
