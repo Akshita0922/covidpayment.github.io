@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: rgb(7, 0, 0);
+    
+}
+header{
+    background-image:linear-gradient(rgba(243, 114, 8, 0.8),rgba(250, 209, 182, 0.1)),url("../images/Charity.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width:1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    margin-top: 40px;
+    width: auto;
+    float: left;
+}
+.nav-bar{
+    float: right;
+    margin-top: 40px;
+}
+.nav-bar li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.nav-bar li a{
+    color: rgb(252, 250, 249);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+}
+.nav-bar li a:hover{
+    border-bottom: 2px solid #dd6706ec;
+}
+
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: rgb(252, 249, 247);
+    font-size: 240%;
+    font-weight:bolder;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform:capitalize;  
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration:none;
+    text-transform:capitalize;
+    border-radius: 120px;
+    margin-top: 30px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+    border:2px solid rgb(224, 86, 6);   
+}
+.btn-full{
+    background-color:rgb(224, 86, 6);
+    color:rgb(247, 224, 224);
+    margin-right: 15px;   
+}
+.btn-full:hover{
+    background-color:#fff;
+    color:rgb(224, 86, 6);
+    border:2px solid rgb(224, 86, 6);   
+}
+.colorchange{
+    animation: colorchangecovid 1s infinite;
+}
+
+@keyframes colorchangecovid{
+    0%{color:  rgb(224, 86, 6);}
+    25%{color:rgb(160, 6, 6);}
+    50%{color: rgb(233, 233, 233);}
+    100%{color: rgb(224, 86, 6);}   
+}
+.icon{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/*responsive queries*/
+@media only screen and (max-width:1180px){
+    .main-content{
+        width: 100%;
+        padding:0 2%;
+        font-weight: bold;}
+        .nav-bar{padding: 0 2%;} 
+
+}
+@media only screen and (max-width:998px){ 
+    h1{font-size:200%;
+    font-weight: bolder;}  
+    .nav-bar{padding: 0 2%;} 
+}
+
+@media only screen and (max-width:768px){ 
+    h1{font-size:180%;}  
+    .nav-bar{display: none;} 
+
+    .icon{ 
+        display: inline-block;
+        color:#fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .nav-bar{
+        float: left;
+        margin:0px 10px;
+        background-color: linear-gradient(rgba(231, 92, 0, 0.972),rgba(250, 209, 182, 0.1));
+    }
+    .nav-bar li{
+        padding:5px 10px;
+        align-items: center;
+        display: block;     
+    }
+}
+
+
+
+
+
+
+    
+    
+
+
+
