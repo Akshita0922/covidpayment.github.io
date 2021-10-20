@@ -158,14 +158,19 @@ body{
     
 }
 @media screen and (max-width:768px){
+    body{
+        height: 100%;
+    }
     .contact-form{
-        flex-direction: column-reverse;
+        flex-direction:column-reverse;
+        margin-left: 15px;
+        
     }
 .contact-form > *{
-    width: 100%;
+    width: 100%;   
 }
 .contact-form .first-container{
-    padding:40px 0;
+    padding:40px 0px;
 }
     
 }
