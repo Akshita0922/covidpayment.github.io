@@ -126,13 +126,20 @@ h1{
         .nav-bar{padding: 0 2%;} 
 
 }
-@media only screen and (max-width:998px){ 
-    h1{font-size:200%;
+@media only screen and (max-width:990px){ 
+    h1{font-size:180%;
     font-weight: bolder;}  
-    .nav-bar{padding: 0 2%;} 
+    .nav-bar{padding:0 2%;
+    } 
+    .nav-bar li{
+        height: 30px;
+    }
+
 }
 
 @media only screen and (max-width:768px){ 
+    h1{font-size:180%;
+        font-weight: bolder;}
     .nav-bar{display: none;} 
 
     .icon{ 
@@ -148,7 +155,7 @@ h1{
         background-color: linear-gradient(rgba(231, 92, 0, 0.972),rgba(250, 209, 182, 0.1));
     }
     .nav-bar li{
-        padding:5px 10px;
+        padding:10px 20px;
         align-items:center;
         display: block;     
     }
